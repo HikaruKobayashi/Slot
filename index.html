@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slot</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="odometer-theme-car.css" />
+  </head>
+  <body>
+    <button type="button" id="spin">START</button>
+    <div class="wrap">
+      <table>
+        <tbody>
+          <tr>
+            <td><span class="odometer slot1">9</span></td>
+            <td><span class="odometer slot2">9</span></td>
+            <td><span class="odometer slot3">9</span></td>
+          </tr>
+          <tr>
+            <td><button type="button" id="stop1">STOP</button></td>
+            <td><button type="button" id="stop2">STOP</button></td>
+            <td><button type="button" id="stop3">STOP</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- odometer.jsは数字や文字を車の走行距離のようにぐるぐると回転させて表示してくれるスクリプト -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="odometer.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
