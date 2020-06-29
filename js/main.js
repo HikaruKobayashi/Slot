@@ -2,10 +2,10 @@ let slotID1 = 0;
 let slotID2 = 0;
 let slotID3 = 0;
 
-function loop_slot1() {
+function loop_slot() {
   $(".slot1").html(0);
   $(".slot1").text(9);
-  slotID1 = setTimeout(loop_slot1, 1950);
+  slotID1 = setTimeout(loop_slot, 1950);
 }
 function loop_slot2() {
   $(".slot2").html(0);
@@ -19,17 +19,18 @@ function loop_slot3() {
 }
 
 $("#spin").on("click", function() {
-  loop_slot1();
+  loop_slot();
   loop_slot2();
   loop_slot3();
 });
 
-$("#stop1").on("click", function() {
+function stop_fnc() {
   clearTimeout(slotID1);
   let random = Math.floor(Math.random() * 10);
   $(".slot1").text(random);
   $(".slot1").html(random);
-});
+}
+
 $("#stop2").on("click", function() {
   clearTimeout(slotID2);
   let random = Math.floor(Math.random() * 10);
@@ -41,4 +42,13 @@ $("#stop3").on("click", function() {
   let random = Math.floor(Math.random() * 10);
   $(".slot3").text(random);
   $(".slot3").html(random);
+});
+
+
+// 非同期処理で書き直す。
+$("#stop1").click(async() => {
+  isRunning = true;
+  console.log("hello");
+  $(".stop-btn").css("background-color", "rgb(255, 0, 0)");
+  await stop_fnc();
 });

@@ -9,20 +9,22 @@
   <body>
     <button type="button" id="spin">START</button>
     <div class="wrap">
-      <table>
-        <tbody>
-          <tr>
-            <td><span class="odometer slot1">9</span></td>
-            <td><span class="odometer slot2">9</span></td>
-            <td><span class="odometer slot3">9</span></td>
-          </tr>
-          <tr>
-            <td><button type="button" id="stop1">STOP</button></td>
-            <td><button type="button" id="stop2">STOP</button></td>
-            <td><button type="button" id="stop3">STOP</button></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="jack-pot-case">
+        <div class="jack-pot-content">          
+          <span class="odometer slot1">7</span>
+          <span class="odometer slot2">7</span>
+          <span class="odometer slot3">7</span>
+        </div>
+        <div class="jack-pot-btn-foundation">
+          <div class="stop-btn left-btn" id="stop1"></div>
+          <div class="stop-btn center-btn" id="stop2"></div>
+          <div class="stop-btn right-btn" id="stop3"></div>
+        </div>
+        <div class="jack-pot-foundation">
+          <div class="jack-pot-exit-1"></div>
+          <div class="jack-pot-exit-2"></div>
+        </div>
+      </div>
     </div>
 
     <!-- odometer.jsは数字や文字を車の走行距離のようにぐるぐると回転させて表示してくれるスクリプト -->
