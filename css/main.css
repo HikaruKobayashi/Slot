@@ -7,6 +7,15 @@
   text-align: center;
   margin: auto;
 }
+.jack-pot-top {
+  width: 250px;
+  height:50px;
+  background-color: rgb(240,0,1);
+  border-radius: 50px 50px 0 0;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: bold;
+}
 .jack-pot-content {
   width: 250px;
   height: 100px;
