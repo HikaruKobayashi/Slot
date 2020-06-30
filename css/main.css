@@ -75,3 +75,26 @@
 .right-btn {
   margin: 0 25px 0 12px;
 }
+
+.jack-pot-handle {
+  width: 28px;
+  height: 28px;
+  background-color: rgb(255, 0, 0);
+  margin-left: 250px;
+  margin-top: -62px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.jack-pot-handle-1 {
+  width: 30px;
+  height: 50px;
+  background-color: rgb(209,209,209);
+  margin-left: 250px;
+}
+.jack-pot-handle-2 {
+  width: 20px;
+  height: 100px;
+  background-color: rgb(209,209,209);
+  margin-left: 254px;
+  margin-top: -150px;
+}
