@@ -33,7 +33,7 @@
 }
 .jack-pot-btn-foundation {
   width: 250px;
-  height: 50px;
+  height: 60px;
   background-color: rgb(210,210,210);
 }
 .jack-pot-foundation {
@@ -47,14 +47,14 @@
   background-color: rgb(2,79,180);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
-  margin: auto;
+  margin: 20px auto 10px;
 }
 .jack-pot-exit-2 {
   width: 120px;
   height: 50px;
   background-color: rgb(40,40,40);
   border-radius: 2px;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .wrap {
@@ -67,16 +67,15 @@
   border-radius: 50%;
   cursor: pointer;
   float: left;
-  margin: auto;
 }
 .left-btn {
-  margin: 0 12px 0 25px;
+  margin: 5px 12px 0 25px;
 }
 .center-btn {
-  margin: 0 12px 0 12px;
+  margin: 5px 12px 0 12px;
 }
 .right-btn {
-  margin: 0 25px 0 12px;
+  margin: 5px 25px 0 12px;
 }
 
 .jack-pot-handle {
@@ -84,7 +83,7 @@
   height: 28px;
   background-color: rgb(255, 0, 0);
   margin-left: 250px;
-  margin-top: -62px;
+  margin-top: -52px;
   border-radius: 50%;
   cursor: pointer;
 }
